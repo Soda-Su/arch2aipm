@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>课程详情 - RAG 产品架构拆解</title>
+    <meta name="description" content="RAG 产品架构拆解：知识库、检索、生成、评估与治理。" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav"><span class="logo">Arch2AI PM</span></nav>
+      <div class="hero-content">
+        <p class="badge">Course 03</p>
+        <h1>RAG 产品架构拆解</h1>
+        <p>从“能答”到“答得准、答得稳、答得可追溯”：建立面向真实业务的 RAG 产品框架。</p>
+      </div>
+    </header>
+
+    <main class="course-main">
+      <a class="back-link" href="../index.html#course-library">← 返回课程列表</a>
+      <section class="card-section">
+        <article class="course-hero">
+          <div class="course-meta">
+            <span class="chip">难度: 进阶</span>
+            <span class="chip">时长: 70-90 分钟</span>
+            <span class="chip">输出: RAG 方案图 + 评估表</span>
+          </div>
+          <p>本课会把 RAG 讲清为产品问题，而不只是技术组件拼装。</p>
+        </article>
+      </section>
+
+      <section class="card-section grid-2">
+        <article class="card">
+          <h2>学习目标</h2>
+          <ul class="learning-list">
+            <li>理解数据入口、切分策略、索引更新与召回质量的关系。</li>
+            <li>掌握检索与生成分层评估，定位错误在“找不到”还是“生成错”。</li>
+            <li>建立可追溯输出（引用片段、来源文档、时间戳）的产品标准。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>模块安排</h2>
+          <ol class="timeline">
+            <li><strong>模块 A:</strong> 知识库与向量索引（更新策略、元数据）</li>
+            <li><strong>模块 B:</strong> 检索策略（语义检索、过滤、重排）</li>
+            <li><strong>模块 C:</strong> 答案生成与引用可追溯</li>
+            <li><strong>模块 D:</strong> 线上监控与失败分层复盘</li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="card-section">
+        <article class="card deliverable">
+          <h2>实操作业</h2>
+          <p>以“建筑法规问答助手”为例，输出：</p>
+          <ul class="learning-list">
+            <li>1 张 RAG 架构图（数据源、索引、检索、生成、监控）。</li>
+            <li>1 份测试集（30 条问题，覆盖新旧规范冲突场景）。</li>
+            <li>1 份错误归因表（检索失败/生成幻觉/引用缺失）。</li>
+          </ul>
+          <p>验收标准：每条回答都可追溯到来源片段，且错误有分类与处置方案。</p>
+        </article>
+      </section>
+
+      <section class="card-section">
+        <article class="card">
+          <h2>参考资料（网络精选）</h2>
+          <ul class="resource-list">
+            <li><a href="https://platform.openai.com/docs/guides/retrieval" target="_blank" rel="noreferrer">OpenAI: Retrieval Guide</a></li>
+            <li><a href="https://platform.openai.com/docs/guides/tools-file-search" target="_blank" rel="noreferrer">OpenAI: File Search Tool</a></li>
+            <li><a href="https://platform.openai.com/docs/guides/embeddings" target="_blank" rel="noreferrer">OpenAI: Embeddings Guide</a></li>
+            <li><a href="https://platform.openai.com/docs/models/text-embedding-3-large" target="_blank" rel="noreferrer">OpenAI: text-embedding-3-large</a></li>
+            <li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/rag-overview" target="_blank" rel="noreferrer">Google Cloud: Vertex AI RAG Engine Overview</a></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer><p>Arch2AI PM · Course 03</p></footer>
+  </body>
+</html>

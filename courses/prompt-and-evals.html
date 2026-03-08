@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>课程详情 - Prompt 设计与评估入门</title>
+    <meta name="description" content="Prompt 设计与评估入门：从提示词到可重复评测。" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav"><span class="logo">Arch2AI PM</span></nav>
+      <div class="hero-content">
+        <p class="badge">Course 02</p>
+        <h1>Prompt 设计与评估入门</h1>
+        <p>把“会写提示词”升级为“能稳定交付结果”：建立模板、对照、评分和迭代流程。</p>
+      </div>
+    </header>
+
+    <main class="course-main">
+      <a class="back-link" href="../index.html#course-library">← 返回课程列表</a>
+      <section class="card-section">
+        <article class="course-hero">
+          <div class="course-meta">
+            <span class="chip">难度: 入门</span>
+            <span class="chip">时长: 45-60 分钟</span>
+            <span class="chip">输出: Prompt 模板 + 小型 Eval 表</span>
+          </div>
+          <p>本课强调“提示词工程 + 评估驱动开发”，让你能够在团队内复现和解释模型效果。</p>
+        </article>
+      </section>
+
+      <section class="card-section grid-2">
+        <article class="card">
+          <h2>学习目标</h2>
+          <ul class="learning-list">
+            <li>掌握 System/User 指令分层与变量化模板设计。</li>
+            <li>理解 few-shot、结构化输出与错误回退策略。</li>
+            <li>搭建最小可用评估集，避免“拍脑袋”判断效果。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>模块安排</h2>
+          <ol class="timeline">
+            <li><strong>模块 A:</strong> Prompt 结构与复用（模板、版本、变量）</li>
+            <li><strong>模块 B:</strong> 评估设计（通过/失败定义、边界样本）</li>
+            <li><strong>模块 C:</strong> 迭代闭环（日志 → 数据集 → 调整）</li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="card-section">
+        <article class="card deliverable">
+          <h2>实操作业</h2>
+          <ul class="learning-list">
+            <li>为“建筑规范问答”写 1 版 Prompt 模板（含约束与输出格式）。</li>
+            <li>准备 15 条测试样本（正常/边界/对抗各 5 条）。</li>
+            <li>定义 3 个评分维度（准确性、可引用性、可执行性）。</li>
+          </ul>
+          <p>验收标准：2 轮迭代后，失败率明显下降，且可解释“为何改进”。</p>
+        </article>
+      </section>
+
+      <section class="card-section">
+        <article class="card">
+          <h2>参考资料（网络精选）</h2>
+          <ul class="resource-list">
+            <li><a href="https://platform.openai.com/docs/guides/prompting" target="_blank" rel="noreferrer">OpenAI: Prompting Guide</a></li>
+            <li><a href="https://platform.openai.com/docs/guides/prompt-optimizer" target="_blank" rel="noreferrer">OpenAI: Prompt Optimizer</a></li>
+            <li><a href="https://platform.openai.com/docs/guides/evaluation-getting-started" target="_blank" rel="noreferrer">OpenAI: Getting Started with Datasets</a></li>
+            <li><a href="https://platform.openai.com/docs/guides/evaluation-best-practices" target="_blank" rel="noreferrer">OpenAI: Evaluation Best Practices</a></li>
+            <li><a href="https://platform.openai.com/docs/guides/graders" target="_blank" rel="noreferrer">OpenAI: Graders</a></li>
+            <li><a href="https://docs.anthropic.com/en/docs/prompt-engineering" target="_blank" rel="noreferrer">Anthropic: Prompt Engineering Overview</a></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer><p>Arch2AI PM · Course 02</p></footer>
+  </body>
+</html>

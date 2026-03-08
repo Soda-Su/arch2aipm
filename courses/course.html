@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>课程详情</title>
+    <meta name="description" content="Arch2AI PM 课程详情页面" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav">
+        <span class="logo">Arch2AI PM</span>
+      </nav>
+      <div class="hero-content">
+        <p class="badge" id="courseBadge">Course</p>
+        <h1 id="courseTitle">课程标题</h1>
+        <p id="courseSummary">课程简介</p>
+      </div>
+    </header>
+
+    <main class="course-main">
+      <a class="back-link" href="../index.html#course-library">← 返回课程列表</a>
+
+      <section class="card-section">
+        <article class="course-hero">
+          <div class="course-meta">
+            <span class="chip" id="chipDifficulty">难度:</span>
+            <span class="chip" id="chipDuration">时长:</span>
+            <span class="chip" id="chipOutput">输出:</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="card-section grid-2">
+        <article class="card">
+          <h2>学习目标</h2>
+          <ul class="learning-list" id="goalsList"></ul>
+        </article>
+        <article class="card">
+          <h2>模块安排</h2>
+          <ol class="timeline" id="modulesList"></ol>
+        </article>
+      </section>
+
+      <section class="card-section" id="timelineSection" hidden>
+        <article class="card">
+          <h2>关键时间线（明确日期）</h2>
+          <ol class="timeline" id="timelineList"></ol>
+        </article>
+      </section>
+
+      <section class="card-section">
+        <article class="card deliverable">
+          <h2>实操作业</h2>
+          <ul class="learning-list" id="assignmentsList"></ul>
+          <p id="acceptance"></p>
+        </article>
+      </section>
+
+      <section class="card-section">
+        <article class="card">
+          <h2>参考资料（网络精选）</h2>
+          <ul class="resource-list" id="resources"></ul>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Arch2AI PM · Data-driven Course</p>
+    </footer>
+    <script src="./courses-data.js"></script>
+    <script src="./course.js"></script>
+  </body>
+</html>
