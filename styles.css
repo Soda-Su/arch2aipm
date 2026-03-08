@@ -175,6 +175,77 @@ main {
   padding-left: 1.05rem;
 }
 
+.t-model-card {
+  margin-bottom: 0.95rem;
+}
+
+.t-model-viz {
+  position: relative;
+  min-height: 260px;
+  border: 1px dashed var(--line);
+  border-radius: 0.8rem;
+  background: #fff;
+}
+
+.t-bar-horizontal,
+.t-bar-vertical {
+  position: absolute;
+  background: var(--ink);
+}
+
+.t-bar-horizontal {
+  left: 14%;
+  right: 14%;
+  top: 26%;
+  height: 16px;
+}
+
+.t-bar-vertical {
+  width: 16px;
+  top: calc(26% + 8px);
+  bottom: 12%;
+  left: calc(50% - 8px);
+}
+
+.t-node {
+  position: absolute;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.18rem 0.6rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.t-node-top {
+  top: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.t-node-left {
+  top: 22%;
+  left: 10%;
+}
+
+.t-node-center {
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.t-node-right {
+  top: 22%;
+  right: 10%;
+}
+
+.t-node-bottom {
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .alt .card {
   background: var(--surface-strong);
 }
@@ -197,6 +268,100 @@ main {
   border: 1px solid var(--line);
   border-radius: 0.6rem;
   padding: 0.6rem 0.76rem;
+}
+
+.timeline-16 {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  margin-top: 0.4rem;
+}
+
+.timeline-16::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-1px);
+  background: #cfd7e6;
+}
+
+.timeline-step {
+  position: relative;
+  width: calc(50% - 1.6rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.72rem;
+  padding: 0.72rem 0.78rem;
+}
+
+.timeline-step::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  border-radius: 50%;
+  background: #4f8bdc;
+  border: 2px solid #dce6f7;
+}
+
+.timeline-step.left {
+  justify-self: start;
+}
+
+.timeline-step.left::after {
+  right: -1.98rem;
+}
+
+.timeline-step.right {
+  justify-self: end;
+}
+
+.timeline-step.right::after {
+  left: -1.98rem;
+}
+
+.timeline-week {
+  margin: 0 0 0.2rem;
+  font-size: 0.82rem;
+  color: #496d9a;
+  font-weight: 700;
+}
+
+.timeline-step h3 {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+.timeline-step p {
+  margin: 0.28rem 0 0;
+}
+
+.plan-tooltip {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 0.45rem);
+  transform: translateX(-50%);
+  width: min(360px, 92vw);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  padding: 0.5rem 0.6rem;
+  color: #5b5750;
+  box-shadow: 0 10px 24px rgba(24, 26, 30, 0.12);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease, transform 160ms ease;
+  z-index: 8;
+}
+
+.timeline-step:hover .plan-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(2px);
 }
 
 .filters {
@@ -229,6 +394,54 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.project-grid h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.46rem;
+}
+
+.pixel-icon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  image-rendering: pixelated;
+  border: 1px solid #bbb1a1;
+}
+
+.px-book {
+  background: linear-gradient(90deg, #2d5f8a 0 50%, #d3e4f5 50% 100%);
+}
+
+.px-cube {
+  background:
+    linear-gradient(45deg, transparent 0 24%, #cba675 24% 76%, transparent 76% 100%),
+    #f4dfbf;
+}
+
+.px-loop {
+  background:
+    radial-gradient(circle at 30% 50%, #fff 18%, #2f795e 19% 38%, transparent 39%),
+    radial-gradient(circle at 70% 50%, #fff 18%, #2f795e 19% 38%, transparent 39%),
+    #d7f0e7;
+}
+
+.px-map {
+  background:
+    repeating-linear-gradient(90deg, #b6d1a4 0 4px, #dbeccf 4px 8px),
+    repeating-linear-gradient(0deg, #b6d1a4 0 4px, #dbeccf 4px 8px);
+}
+
+.px-shield {
+  background:
+    linear-gradient(180deg, #2f795e 0 62%, #d7f0e7 62% 100%);
+}
+
+.px-grid {
+  background:
+    repeating-linear-gradient(90deg, #7f8694 0 2px, #d6dbe4 2px 5px),
+    repeating-linear-gradient(0deg, #7f8694 0 2px, #d6dbe4 2px 5px);
 }
 
 .course-status {
@@ -322,6 +535,26 @@ footer {
   max-width: 1120px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+.footer-sign {
+  white-space: nowrap;
+}
+
+.contact-card p {
+  margin: 0 0 0.35rem;
+}
+
+.contact-card p:last-child {
+  margin-bottom: 0;
 }
 
 .course-main {
@@ -432,5 +665,45 @@ footer {
 
   .hero {
     padding-bottom: 2.5rem;
+  }
+
+  .t-model-viz {
+    min-height: 300px;
+  }
+
+  .t-node-left,
+  .t-node-right {
+    top: 20%;
+  }
+
+  .timeline-16::before {
+    left: 0.35rem;
+    transform: none;
+  }
+
+  .timeline-step {
+    width: calc(100% - 1.5rem);
+    justify-self: end;
+  }
+
+  .timeline-step.left::after,
+  .timeline-step.right::after {
+    left: -1rem;
+    right: auto;
+  }
+
+  .plan-tooltip {
+    left: 0;
+    transform: none;
+    width: 100%;
+  }
+
+  .timeline-step:hover .plan-tooltip {
+    transform: translateY(2px);
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

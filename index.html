@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arch2AI PM - 建筑师转型 AI 产品经理</title>
+    <title>Arch2AIPM - 建筑师转型 AI 产品经理</title>
     <meta
       name="description"
       content="帮助建筑师系统转型为 AI 产品经理的学习网站：路线图、能力模型、项目实战与资料库。"
@@ -13,7 +13,7 @@
   <body>
     <header class="hero">
       <nav class="top-nav">
-        <span class="logo">Arch2AI PM</span>
+        <span class="logo">Arch2AIPM</span>
         <div class="nav-links">
           <a href="#roadmap">转型路线</a>
           <a href="#skills">能力模型</a>
@@ -35,26 +35,20 @@
     </header>
 
     <main>
-      <section id="roadmap" class="card-section">
-        <h2>转型路线图</h2>
-        <div class="grid-3">
-          <article class="card">
-            <h3>阶段 1: 基础认知</h3>
-            <p>理解 AI 产品生命周期、模型能力边界、Prompt 与评估方法。</p>
-          </article>
-          <article class="card">
-            <h3>阶段 2: 产品方法</h3>
-            <p>学习需求分析、用户研究、PRD 写作、指标设计和 A/B 测试。</p>
-          </article>
-          <article class="card">
-            <h3>阶段 3: 领域结合</h3>
-            <p>围绕建筑/城市/空间场景做 AI 产品方案并形成可展示作品集。</p>
-          </article>
-        </div>
-      </section>
-
       <section id="skills" class="card-section alt">
         <h2>能力模型 (T 型)</h2>
+        <p class="section-intro">横向是产品通用能力，纵向是 AI 专项深度。两者叠加形成你的转型竞争力。</p>
+        <div class="card t-model-card">
+          <div class="t-model-viz" aria-hidden="true">
+            <div class="t-bar-horizontal"></div>
+            <div class="t-bar-vertical"></div>
+            <div class="t-node t-node-top">AI 专项深度</div>
+            <div class="t-node t-node-left">问题定义</div>
+            <div class="t-node t-node-center">用户与场景</div>
+            <div class="t-node t-node-right">MVP 与迭代</div>
+            <div class="t-node t-node-bottom">指标与复盘</div>
+          </div>
+        </div>
         <div class="grid-2">
           <article class="card">
             <h3>横向能力 (PM 通用)</h3>
@@ -77,50 +71,26 @@
         </div>
       </section>
 
-      <section id="projects" class="card-section">
-        <h2>作品集实战题目</h2>
+      <section id="roadmap" class="card-section">
+        <h2>转型路线图</h2>
         <div class="grid-3">
           <article class="card">
-            <h3>1. 规范检索 Copilot</h3>
-            <p>为建筑设计师提供法规问答和引用依据，演示 RAG 产品设计能力。</p>
+            <h3>阶段 1: 基础认知</h3>
+            <p>理解 AI 产品生命周期、模型能力边界、Prompt 与评估方法。</p>
           </article>
           <article class="card">
-            <h3>2. 概念方案生成助手</h3>
-            <p>将文本需求转为空间概念草案流程，强调人机协同而非全自动替代。</p>
+            <h3>阶段 2: 产品方法</h3>
+            <p>学习需求分析、用户研究、PRD 写作、指标设计和 A/B 测试。</p>
           </article>
           <article class="card">
-            <h3>3. 项目复盘智能体</h3>
-            <p>自动归纳项目问题与改进建议，体现指标体系和闭环思维。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="resources" class="card-section alt">
-        <h2>学习资料库</h2>
-        <div class="grid-2">
-          <article class="card">
-            <h3>必读主题</h3>
-            <ul>
-              <li>AI 产品经理入门框架</li>
-              <li>提示词工程与评估</li>
-              <li>RAG 产品架构与数据治理</li>
-              <li>AI 产品伦理与安全</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>推荐行动</h3>
-            <ul>
-              <li>每周 1 篇竞品拆解</li>
-              <li>每两周 1 个小型 Demo</li>
-              <li>每月 1 次公开分享或文章</li>
-              <li>持续维护作品集页面</li>
-            </ul>
+            <h3>阶段 3: 领域结合</h3>
+            <p>围绕建筑/城市/空间场景做 AI 产品方案并形成可展示作品集。</p>
           </article>
         </div>
       </section>
 
       <section id="course-library" class="card-section">
-        <h2>课程与资料详情</h2>
+        <h2>基础资料与课程</h2>
         <p class="section-intro">
           按难度和预计学习时长筛选你当前最需要的内容。
         </p>
@@ -138,10 +108,10 @@
             全部时长
           </button>
           <button class="filter-btn" data-filter-type="duration" data-filter-value="short" type="button">
-            30 分钟内
+            45 分钟内
           </button>
           <button class="filter-btn" data-filter-type="duration" data-filter-value="long" type="button">
-            30 分钟以上
+            45 分钟以上
           </button>
         </div>
 
@@ -149,42 +119,42 @@
           <article class="card course-card" data-level="beginner" data-duration="short" data-course-id="ai-pm-role-map">
             <h3>AI 产品经理角色地图</h3>
             <p>摘要: 理解岗位职责、团队协作方式、常见误区和成长路径。</p>
-            <p class="meta">难度: 入门 | 预计时长: 25 分钟</p>
+            <p class="meta">难度: 入门 | 预计时长: 40 分钟</p>
             <p class="course-status"></p>
             <a class="download-link" href="courses/course.html?id=ai-pm-role-map">查看课程详情</a>
           </article>
           <article class="card course-card" data-level="beginner" data-duration="long" data-course-id="prompt-and-evals">
             <h3>Prompt 设计与评估入门</h3>
             <p>摘要: 通过输入模板、评价标准和失败案例学习 Prompt 迭代方法。</p>
-            <p class="meta">难度: 入门 | 预计时长: 45 分钟</p>
+            <p class="meta">难度: 入门 | 预计时长: 60 分钟</p>
             <p class="course-status"></p>
             <a class="download-link" href="courses/course.html?id=prompt-and-evals">查看课程详情</a>
           </article>
           <article class="card course-card" data-level="intermediate" data-duration="long" data-course-id="rag-architecture">
             <h3>RAG 产品架构拆解</h3>
             <p>摘要: 从知识库构建、召回策略到答案可追溯性，建立完整方案。</p>
-            <p class="meta">难度: 进阶 | 预计时长: 70 分钟</p>
+            <p class="meta">难度: 进阶 | 预计时长: 90 分钟</p>
             <p class="course-status"></p>
             <a class="download-link" href="courses/course.html?id=rag-architecture">查看课程详情</a>
           </article>
           <article class="card course-card" data-level="intermediate" data-duration="short" data-course-id="ai-metrics-sprint">
             <h3>AI 指标体系速练</h3>
             <p>摘要: 设计北极星指标、质量指标和流程指标，避免只看 DAU。</p>
-            <p class="meta">难度: 进阶 | 预计时长: 30 分钟</p>
+            <p class="meta">难度: 进阶 | 预计时长: 45 分钟</p>
             <p class="course-status"></p>
             <a class="download-link" href="courses/course.html?id=ai-metrics-sprint">查看课程详情</a>
           </article>
           <article class="card course-card" data-level="beginner" data-duration="short" data-course-id="architecture-ai-opportunity-map">
             <h3>建筑行业 AI 场景发现清单</h3>
             <p>摘要: 基于建筑工作流识别可 AI 化环节，形成需求池。</p>
-            <p class="meta">难度: 入门 | 预计时长: 20 分钟</p>
+            <p class="meta">难度: 入门 | 预计时长: 35 分钟</p>
             <p class="course-status"></p>
             <a class="download-link" href="courses/course.html?id=architecture-ai-opportunity-map">查看课程详情</a>
           </article>
           <article class="card course-card" data-level="intermediate" data-duration="long" data-course-id="ai-risk-compliance">
             <h3>AI 产品风险与合规实操</h3>
             <p>摘要: 建立敏感内容、版权、幻觉与隐私风险的治理流程。</p>
-            <p class="meta">难度: 进阶 | 预计时长: 60 分钟</p>
+            <p class="meta">难度: 进阶 | 预计时长: 80 分钟</p>
             <p class="course-status"></p>
             <a class="download-link" href="courses/course.html?id=ai-risk-compliance">查看课程详情</a>
           </article>
@@ -192,15 +162,58 @@
       </section>
 
       <section id="plan" class="card-section">
-        <h2>12 周转型计划</h2>
-        <ol class="timeline">
-          <li><strong>第 1-2 周:</strong> AI 与产品管理基础、术语和行业地图。</li>
-          <li><strong>第 3-4 周:</strong> 学习用户研究、PRD、指标设计。</li>
-          <li><strong>第 5-6 周:</strong> 搭建第一个 AI Demo（聊天/检索类）。</li>
-          <li><strong>第 7-8 周:</strong> 聚焦建筑场景，完成领域化方案。</li>
-          <li><strong>第 9-10 周:</strong> 完善评估体系、迭代版本、沉淀案例。</li>
-          <li><strong>第 11-12 周:</strong> 作品集上线、模拟面试、岗位投递。</li>
-        </ol>
+        <h2>16 周转型计划</h2>
+        <p class="section-intro">将学习路径拆成 6 个阶段。鼠标悬停卡片可查看该阶段的重点学习内容。</p>
+        <div class="timeline-16" aria-label="16 周转型时间线">
+          <article class="timeline-step left">
+            <p class="timeline-week">第 1-2 周</p>
+            <h3>基础认知与行业地图</h3>
+            <p>AI 与产品管理基础、术语和行业地图。</p>
+            <div class="plan-tooltip" role="note">
+              学习重点：AI 产品生命周期、角色分工、行业价值链与岗位能力映射。
+            </div>
+          </article>
+          <article class="timeline-step right">
+            <p class="timeline-week">第 3-4 周</p>
+            <h3>产品方法打底</h3>
+            <p>学习用户研究、PRD、指标设计。</p>
+            <div class="plan-tooltip" role="note">
+              学习重点：访谈提纲、需求澄清、PRD 结构化表达、北极星指标定义。
+            </div>
+          </article>
+          <article class="timeline-step left">
+            <p class="timeline-week">第 5-8 周</p>
+            <h3>第一个 AI Demo</h3>
+            <p>搭建第一个 AI Demo（聊天/检索类）。</p>
+            <div class="plan-tooltip" role="note">
+              学习重点：最小可用流程、Prompt 迭代、基础评测集、日志与错误分类。
+            </div>
+          </article>
+          <article class="timeline-step right">
+            <p class="timeline-week">第 9-12 周</p>
+            <h3>第二个 AI Demo（建筑场景）</h3>
+            <p>搭建第二个AI Demo：聚焦建筑场景，完成领域化方案。</p>
+            <div class="plan-tooltip" role="note">
+              学习重点：建筑业务流程建模、领域数据组织、RAG 可追溯输出与风险边界。
+            </div>
+          </article>
+          <article class="timeline-step left">
+            <p class="timeline-week">第 13-14 周</p>
+            <h3>评估与迭代</h3>
+            <p>完善评估体系、迭代版本、沉淀案例。</p>
+            <div class="plan-tooltip" role="note">
+              学习重点：离线评估、线上指标看板、版本对比与复盘模板沉淀。
+            </div>
+          </article>
+          <article class="timeline-step right">
+            <p class="timeline-week">第 15-16 周</p>
+            <h3>求职冲刺</h3>
+            <p>作品集上线、模拟面试、岗位投递。</p>
+            <div class="plan-tooltip" role="note">
+              学习重点：项目叙事、STAR 面试表达、岗位匹配策略与简历打磨。
+            </div>
+          </article>
+        </div>
       </section>
 
       <section id="tracker" class="card-section alt">
@@ -231,6 +244,36 @@
         </div>
       </section>
 
+      <section id="projects" class="card-section">
+        <h2>作品集实战题目</h2>
+        <div class="grid-3 project-grid">
+          <article class="card">
+            <h3><span class="pixel-icon px-book" aria-hidden="true"></span>1. 规范检索 Copilot</h3>
+            <p>为建筑设计师提供法规问答和引用依据，演示 RAG 产品设计能力。</p>
+          </article>
+          <article class="card">
+            <h3><span class="pixel-icon px-cube" aria-hidden="true"></span>2. 建筑概念生成助手（多模态）</h3>
+            <p>结合文本、草图、参考图进行多模态方案生成与比选，强调可控性与设计意图保留。</p>
+          </article>
+          <article class="card">
+            <h3><span class="pixel-icon px-loop" aria-hidden="true"></span>3. 施工协同 Agent</h3>
+            <p>基于任务依赖自动拆解周计划，触发跨角色提醒与冲突处理建议。</p>
+          </article>
+          <article class="card">
+            <h3><span class="pixel-icon px-map" aria-hidden="true"></span>4. 城市更新机会雷达</h3>
+            <p>结合公开数据识别片区改造机会，输出机会评分与优先级地图。</p>
+          </article>
+          <article class="card">
+            <h3><span class="pixel-icon px-shield" aria-hidden="true"></span>5. AI 风险护栏编排器</h3>
+            <p>面向生成式产品配置内容安全、版权、隐私和人工兜底策略，输出上线门禁。</p>
+          </article>
+          <article class="card">
+            <h3><span class="pixel-icon px-grid" aria-hidden="true"></span>6. 多 Agent 研究助理</h3>
+            <p>通过规划、检索、总结三个 Agent 协同完成竞品研究和机会洞察报告。</p>
+          </article>
+        </div>
+      </section>
+
       <section id="templates" class="card-section">
         <h2>作品集模板下载区</h2>
         <div class="grid-3">
@@ -251,10 +294,20 @@
           </article>
         </div>
       </section>
+
+      <section id="contact" class="card-section alt">
+        <h2>联系我们</h2>
+        <div class="card contact-card">
+          <p>希望获得更加针对性的转行建议，了解我们如何帮助10+建筑师取得Google、TikTok、腾讯、阿里的百万年薪offer？欢迎发送个人简历到如下方式。</p>
+          <p>小红书：Soda Chat</p>
+          <p>邮箱：chatwithsoda@gmail.com</p>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <p>Arch2AI PM · 从建筑专业能力出发，建立 AI 产品职业竞争力</p>
+      <p>Arch2AIPM 是 Arch2Tech的专项企划。从建筑专业能力出发，建立 AI 产品职业竞争力。</p>
+      <p class="footer-sign">Soda Su, 2026</p>
     </footer>
 
     <div id="assessmentModal" class="modal" aria-hidden="true">

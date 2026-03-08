@@ -3,7 +3,7 @@ window.COURSE_DATA = {
     title: "AI 产品经理角色地图",
     badge: "Course 01",
     difficulty: "入门",
-    duration: "25-40 分钟",
+    duration: "40-55 分钟",
     output: "角色地图 + 能力差距表",
     summary:
       "从建筑师视角建立 AI PM 的岗位认知、协作边界与胜任力模型，避免“只会写提示词”的转型误区。",
@@ -48,7 +48,7 @@ window.COURSE_DATA = {
     title: "Prompt 设计与评估入门",
     badge: "Course 02",
     difficulty: "入门",
-    duration: "45-60 分钟",
+    duration: "60-75 分钟",
     output: "Prompt 模板 + 小型 Eval 表",
     summary:
       "把“会写提示词”升级为“能稳定交付结果”：建立模板、对照、评分和迭代流程。",
@@ -100,7 +100,7 @@ window.COURSE_DATA = {
     title: "RAG 产品架构拆解",
     badge: "Course 03",
     difficulty: "进阶",
-    duration: "70-90 分钟",
+    duration: "90-110 分钟",
     output: "RAG 方案图 + 评估表",
     summary:
       "从“能答”到“答得准、答得稳、答得可追溯”：建立面向真实业务的 RAG 产品框架。",
@@ -149,7 +149,7 @@ window.COURSE_DATA = {
     title: "AI 指标体系速练",
     badge: "Course 04",
     difficulty: "进阶",
-    duration: "30-45 分钟",
+    duration: "45-60 分钟",
     output: "指标树 + 实验看板草案",
     summary:
       "建立可执行的指标树，把“模型效果、用户体验、业务结果”放进同一个决策框架。",
@@ -193,7 +193,7 @@ window.COURSE_DATA = {
     title: "建筑行业 AI 场景发现清单",
     badge: "Course 05",
     difficulty: "入门",
-    duration: "20-35 分钟",
+    duration: "35-50 分钟",
     output: "机会清单 + 优先级矩阵",
     summary:
       "把建筑业务流程拆解为可落地的 AI 产品机会，优先做“高频、可验证、可迭代”的场景。",
@@ -245,7 +245,7 @@ window.COURSE_DATA = {
     title: "AI 产品风险与合规实操",
     badge: "Course 06",
     difficulty: "进阶",
-    duration: "60-80 分钟",
+    duration: "80-100 分钟",
     output: "风险台账 + 上线门禁清单",
     summary:
       "建立可落地的风险治理机制：从模型风险识别到上线前控制，再到持续监测与事件响应。",
